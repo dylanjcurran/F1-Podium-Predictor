@@ -1,11 +1,11 @@
 # F1 Podium Predictor 🏎️
 
-Predicting Formula 1 podium finishes (top-3 results) using historical race data (1950–2023).  
+Predicting Formula 1 podium finishes (top-3 results) using historical race data (1950–2020).  
 This project explores leakage-safe feature engineering, calibration of probabilities, and model robustness across seasons and circuits.
 
 ## 🚀 Project Overview
 - **Goal:** Predict whether a driver will finish on the podium (top-3).  
-- **Dataset:** Kaggle Formula 1 World Championship (1950–2020), extended to 2023.  
+- **Dataset:** Kaggle Formula 1 World Championship (1950–2020)  
 - **Approach:**  
   - Strict season-based splits (train ≤ 2018, validate 2019–2020, test 2021–2023).  
   - Leakage-safe rolling features: driver/team form (last-N points & podium rates).  
@@ -45,9 +45,8 @@ XGBoost Calibration:
    cd F1-Podium-Predictor  
    pip install -r requirements.txt  
 
-2. Place dataset CSVs in `data/raw/`.  
+2. Dataset CSVs are in `data/raw/`.  
    - Dataset: Kaggle Formula 1 World Championship (1950–2020).  
-   - Extend to 2023 if available (or use provided joined CSV).  
 
 3. Run the pipeline:  
    python scripts/run_model.py  
