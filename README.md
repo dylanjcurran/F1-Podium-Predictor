@@ -27,9 +27,12 @@ This project explores leakage-safe feature engineering, calibration of probabili
 - F1 on unseen test seasons reaches 0.69.
 
 ## 📸 Example Outputs
-Calibration (raw vs calibrated):  
+Raw Calibration:  
 
 ![Calibration Raw](outputs/calibration_test_raw.png)  
+
+Calculated Calibration:  
+
 ![Calibration Calibrated](outputs/calibration_test_calibrated.png)  
 
 XGBoost Calibration:  
