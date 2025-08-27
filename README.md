@@ -15,7 +15,7 @@ This project explores leakage-safe feature engineering, calibration of probabili
 ## 📊 Key Results
 | Model                  | PR-AUC | Brier Score | F1@opt |
 |-------------------------|--------|-------------|--------|
-| Baseline (grid ≤3)     | 0.41   | 0.133       | 0.60   |
+| Baseline (grid ≤ 3)     | 0.41   | 0.133       | 0.60   |
 | Logistic Regression     | 0.63   | 0.108       | 0.60   |
 | Logistic Reg (Calibr.)  | 0.61   | **0.085**   | 0.60   |
 | XGBoost                 | **0.74** | 0.105     | **0.69** |
