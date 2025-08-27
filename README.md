@@ -29,11 +29,11 @@ This project explores leakage-safe feature engineering, calibration of probabili
 ## 📂 Repo Structure
 f1-podium-predictor/  
 ├─ scripts/  
-│ ├─ run_model.py – one-click entrypoint  
-│ ├─ train_f1_module.py – pipeline: features, models, calibration, reporting  
-│ └─ data_prep.py – (optional) dataset manipulation  
-├─ data/ – raw CSVs (not committed; see Kaggle link)  
-├─ outputs/ – model artifacts (gitignored)  
+│ ├─ run_model.py
+│ ├─ train_f1_module.py  
+│ └─ data_manipulation.py
+├─ data/
+├─ outputs/  
 │ ├─ metrics.json  
 │ ├─ MODEL_REPORT.md  
 │ ├─ calibration_test_raw.png  
@@ -45,7 +45,7 @@ f1-podium-predictor/
 │ ├─ logreg_test_by_circuit_{raw,calibrated}.csv  
 │ └─ *_thresholds_test_{raw,calibrated}.csv  
 ├─ tests/  
-│ └─ test_pipeline.py – smoke test  
+│ └─ test_pipeline.py (smoke test) 
 ├─ requirements.txt  
 └─ README.md  
 
