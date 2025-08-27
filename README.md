@@ -24,30 +24,7 @@ This project explores leakage-safe feature engineering, calibration of probabili
 **Takeaway:**  
 - XGBoost nearly doubled PR-AUC vs baseline (0.41 → 0.74).  
 - Calibration cut Brier loss in half (0.133 → 0.069), producing well-calibrated probabilities.  
-- F1 on unseen test seasons reaches 0.69.  
-
-## 📂 Repo Structure
-f1-podium-predictor/  
-├─ scripts/  
-│ ├─ run_model.py
-│ ├─ train_f1_module.py  
-│ └─ data_manipulation.py
-├─ data/
-├─ outputs/  
-│ ├─ metrics.json  
-│ ├─ MODEL_REPORT.md  
-│ ├─ calibration_test_raw.png  
-│ ├─ calibration_test_calibrated.png  
-│ ├─ xgb_calibration_test_raw.png  
-│ ├─ xgb_feature_importance.csv  
-│ ├─ xgb_test_by_season.csv  
-│ ├─ xgb_test_by_circuit_{raw,calibrated}.csv  
-│ ├─ logreg_test_by_circuit_{raw,calibrated}.csv  
-│ └─ *_thresholds_test_{raw,calibrated}.csv  
-├─ tests/  
-│ └─ test_pipeline.py (smoke test) 
-├─ requirements.txt  
-└─ README.md  
+- F1 on unseen test seasons reaches 0.69.
 
 ## 📸 Example Outputs
 Calibration (raw vs calibrated):  
@@ -77,12 +54,7 @@ XGBoost Calibration:
    - calibration plots  
    - threshold sweeps  
    - per-season & per-circuit breakdowns  
-   - feature importance CSV  
-
-## ✅ Next Steps
-- Add SHAP feature explanations for XGBoost.  
-- Extend to driver-constructor matching for future prediction tasks.  
-- Package into a web demo (Streamlit).  
+   - feature importance CSV
 
 ## 📄 License
 This project is licensed under the MIT License — see LICENSE for details.
