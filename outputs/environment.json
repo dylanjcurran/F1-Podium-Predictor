@@ -1,0 +1,9 @@
+{
+  "python": "3.11.7 (v3.11.7:fa7a6f2303, Dec  4 2023, 15:22:56) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "packages": {
+    "scikit_learn": "1.6.1",
+    "xgboost": "3.0.4",
+    "pandas": "2.2.0"
+  }
+}
