@@ -61,8 +61,8 @@ XGBoost Calibration:
 
 ## 🔧 How to Run
 1. Clone the repo and install requirements:  
-   git clone https://github.com/<your-username>/f1-podium-predictor.git  
-   cd f1-podium-predictor  
+   git clone https://github.com/dylanjcurran/F1-Podium-Predictor.git  
+   cd F1-Podium-Predictor  
    pip install -r requirements.txt  
 
 2. Place dataset CSVs in `data/raw/`.  
