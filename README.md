@@ -6,7 +6,7 @@ This project uses leakage prevention techniques, feature engineering, calibratio
 
 ## 🚀 Project Overview
 - **Goal:** Predict whether a driver will finish on the podium (top-3).  
-- **Dataset:** Kaggle Formula 1 World Championship (1950–2023)  
+- **Dataset:** Formula 1 World Championship (1950–2023)  
 - **Approach:**  
   - Season-based splits (train ≤ 2018, validate 2019–2020, test 2021–2023).  
   - Leakage prevention and rolling features for driver/team.
