@@ -1,10 +1,10 @@
-# F1 Podium Predictor 🏎️
+# F1 Podium Predictor
 
 Predicting Formula 1 podium finishes (top-3 results) using historical race data (1950–2023).  
 
 This project uses leakage prevention techniques, feature engineering, calibration of probabilities, and model robustness across seasons and circuits.
 
-## 🚀 Project Overview
+## Project Overview
 - **Goal:** Predict whether a driver will finish on the podium (top-3).  
 - **Dataset:** Formula 1 World Championship (1950–2023)  
 - **Approach:**  
@@ -13,7 +13,7 @@ This project uses leakage prevention techniques, feature engineering, calibratio
   - Models: Logistic Regression and XGBoost, with Isotonic Calibration for Probability Quality.  
   - Baselines: Simple grid-position rule (predict the starting 3 drivers on the grid get podium).
 
-## 📊 Key Results
+## Key Results
 | Model                  | PR-AUC | Brier Score | F1@opt |
 |-------------------------|--------|-------------|--------|
 | Baseline (grid ≤ 3)     | 0.41   | 0.133       | 0.60   |
@@ -27,7 +27,7 @@ This project uses leakage prevention techniques, feature engineering, calibratio
 - Calibration cut Brier loss in half (0.133 → 0.069).
 - F1 on unseen test seasons reached 0.69.
 
-## 📸 Example Outputs
+## Example Outputs
 Raw Calibration:  
 
 ![Calibration Raw](outputs/calibration_test_raw.png)  
@@ -40,12 +40,12 @@ XGBoost Calibration:
 
 ![XGB Calibration](outputs/xgb_calibration_test_raw.png)  
 
-## 🖼️ Example Outputs
+## Example Outputs
 You can run predict_example.py to see an example of a model prediction. This script takes a random row from the complete dataset and prints out its information, expected output, and actual output.
 
 Run this script to see the model in action!
 
-## 🔧 How to Run
+## How to Run
 1. Clone the repo and install requirements:  
    git clone https://github.com/dylanjcurran/F1-Podium-Predictor.git  
    cd F1-Podium-Predictor  
