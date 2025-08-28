@@ -40,6 +40,11 @@ XGBoost Calibration:
 
 ![XGB Calibration](outputs/xgb_calibration_test_raw.png)  
 
+## 🖼️ Example Outputs
+You can run predict_example.py to see an example of a model prediction. This script takes a random row from the complete dataset and prints out its information, expected output, and actual output.
+
+Run this script to see the model in action!
+
 ## 🔧 How to Run
 1. Clone the repo and install requirements:  
    git clone https://github.com/dylanjcurran/F1-Podium-Predictor.git  
