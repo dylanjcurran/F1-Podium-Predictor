@@ -64,5 +64,5 @@ Run this script to see the model in action!
    - per-season & per-circuit breakdowns  
    - feature importance CSV
 
-## 📄 License
+## License
 This project is licensed under the MIT License — see LICENSE for details.
