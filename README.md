@@ -1,16 +1,16 @@
 # F1 Podium Predictor 🏎️
 
 Predicting Formula 1 podium finishes (top-3 results) using historical race data (1950–2023).  
-This project explores leakage-safe feature engineering, calibration of probabilities, and model robustness across seasons and circuits.
+This project employs leakage prevention techniques, feature engineering, calibration of probabilities, and model robustness across seasons and circuits.
 
 ## 🚀 Project Overview
 - **Goal:** Predict whether a driver will finish on the podium (top-3).  
 - **Dataset:** Kaggle Formula 1 World Championship (1950–2023)  
 - **Approach:**  
-  - Strict season-based splits (train ≤ 2018, validate 2019–2020, test 2021–2023).  
-  - Leakage-safe rolling features: driver/team form (last-N points & podium rates).  
-  - Models: Logistic Regression and XGBoost, with isotonic calibration for probability quality.  
-  - Baselines: Simple grid-position rule (driver starting ≤3rd).
+  - Season-based splits (train ≤ 2018, validate 2019–2020, test 2021–2023).  
+  - Leakage prevention and rolling features for driver/team.
+  - Models: Logistic Regression and XGBoost, with Isotonic Calibration for Probability Quality.  
+  - Baselines: Simple grid-position rule (predict the starting 3 drivers on the grid get podium).
 
 ## 📊 Key Results
 | Model                  | PR-AUC | Brier Score | F1@opt |
@@ -23,8 +23,8 @@ This project explores leakage-safe feature engineering, calibration of probabili
 
 **Takeaway:**  
 - XGBoost nearly doubled PR-AUC vs baseline (0.41 → 0.74).  
-- Calibration cut Brier loss in half (0.133 → 0.069), producing well-calibrated probabilities.  
-- F1 on unseen test seasons reaches 0.69.
+- Calibration cut Brier loss in half (0.133 → 0.069).
+- F1 on unseen test seasons reached 0.69.
 
 ## 📸 Example Outputs
 Raw Calibration:  
@@ -51,7 +51,7 @@ XGBoost Calibration:
 3. Run the pipeline:  
    python scripts/run_model.py  
 
-4. Outputs will be written to `outputs/`:  
+4. Outputs are written to `outputs/`:  
    - metrics.json, MODEL_REPORT.md  
    - calibration plots  
    - threshold sweeps  
