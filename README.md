@@ -1,7 +1,8 @@
 # F1 Podium Predictor 🏎️
 
 Predicting Formula 1 podium finishes (top-3 results) using historical race data (1950–2023).  
-This project employs leakage prevention techniques, feature engineering, calibration of probabilities, and model robustness across seasons and circuits.
+
+This project uses leakage prevention techniques, feature engineering, calibration of probabilities, and model robustness across seasons and circuits.
 
 ## 🚀 Project Overview
 - **Goal:** Predict whether a driver will finish on the podium (top-3).  
