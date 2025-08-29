@@ -52,7 +52,7 @@ Run this script to see the model in action!
    pip install -r requirements.txt  
 
 2. Dataset CSVs are in `data/raw/`.  
-   - Joined Dataset is in `data/processed/`  
+   - Joined Dataset is in `data/processed/`.
 
 3. Run the pipeline:  
    python scripts/run_model.py  
