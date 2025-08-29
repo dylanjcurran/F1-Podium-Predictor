@@ -52,7 +52,7 @@ Run this script to see the model in action!
    pip install -r requirements.txt  
 
 2. Dataset CSVs are in `data/raw/`.  
-   - Dataset: Kaggle Formula 1 World Championship (1950–2023).  
+   - Joined Dataset is in `data/processed/`  
 
 3. Run the pipeline:  
    python scripts/run_model.py  
